@@ -22,3 +22,7 @@ Add knockout templates to your assets folder.
 
     <!-- in app/assets/javascript/templates/hello.khtml -->
     <div data-bind="text:message" class="important"></div>
+
+## Acknowledgements
+
+Template prefix mangling from the [jquery-tmpl-rails](https://github.com/jimmycuadra/jquery-tmpl-rails) gem.
