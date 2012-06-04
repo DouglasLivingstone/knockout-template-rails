@@ -7,11 +7,11 @@ require "knockout_template_rails/version"
 Gem::Specification.new do |s|
   s.name        = "knockout_template_rails"
   s.version     = KnockoutTemplateRails::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of KnockoutTemplateRails."
-  s.description = "TODO: Description of KnockoutTemplateRails."
+  s.authors       = ["Douglas Livingstone"]
+  s.email         = ["Douglas@redmelon.net"]
+  s.summary       = %q{Knockout template assets}
+  s.description   = %q{Knockout native template engine assets for Rails}
+  s.homepage      = "https://github.com/DouglasLivingstone/knockout-template-rails"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
