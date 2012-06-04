@@ -27,11 +27,7 @@ Then reference them from `application.js`:
 
     //= require ./templates/hello.khtml
 
-The templates will then be rendered as scrip blocks for use with the Knockout Native Template engine, like this:
-
-    <script type="text/html" id="templates/test">
-        <div data-bind="text:message" class="important"></div>
-    </script>
+The templates will then be rendered as scrip blocks for use with the Knockout Native Template engine.
 
 ## Configuration
 
@@ -39,11 +35,7 @@ If all the templates have a common prefix which should not appear in the templat
 
     config.knockout_templates.prefix = "templates"
 
-Which produces this output:
-
-    <script type="text/html" id="test">
-        <div data-bind="text:message" class="important"></div>
-    </script>
+The above template will then have the name "hello".
 
 ## Acknowledgements
 

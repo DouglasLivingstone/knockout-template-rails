@@ -1,1 +1,1 @@
-<div class="test">Hello World!</div>
+<div class="test" onclick='alert("test")'>Hello World!</div>

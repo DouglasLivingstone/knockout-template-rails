@@ -5,13 +5,10 @@ require 'action_view/helpers'
 
 module KnockoutTemplateRails
   class KnockoutTemplate < Tilt::Template
+    include ActionView::Helpers::JavaScriptHelper
 
     def self.default_mime_type
       'text/html'
-    end
-
-    def compile!
-        puts "compiled"
     end
 
     def prepare
@@ -19,7 +16,7 @@ module KnockoutTemplateRails
     end
 
     def evaluate(scope, locals, &block)
-      %{<script type="text/html" id="#{template_name(scope)}">#{data}</script>}
+      %{document.write('<scr' + 'ipt type="text/html" id="#{template_name(scope)}">#{escape_javascript(data)}</scr' + 'ipt>');}
     end
 
     private
